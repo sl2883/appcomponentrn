@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Func",
+    "slug": "Func",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Func"
+}
