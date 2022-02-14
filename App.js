@@ -6,10 +6,12 @@ const CleverTap = require('clevertap-react-native');
 CleverTap.setDebugLevel(3);
 
 function sendEvent() {
-  //CleverTap.setDebugLevel(3);
+  CleverTap.setDebugLevel(3);
   console.log("test this")
   CleverTap.recordEvent("Product Viewed", {});
 }
+
+
 
 export default function App() {
   CleverTap.setDebugLevel(3);
