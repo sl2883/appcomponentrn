@@ -17,6 +17,10 @@ import expo.modules.ReactNativeHostWrapper;
 
 import com.facebook.react.bridge.JSIModulePackage;
 
+import com.clevertap.android.sdk.ActivityLifecycleCallback;
+import com.clevertap.react.CleverTapPackage;
+import com.clevertap.android.sdk.CleverTapAPI;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
@@ -51,6 +55,7 @@ public class MainApplication extends Application implements ReactApplication {
 
   @Override
   public void onCreate() {
+    ActivityLifecycleCallback.register(this);
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
 
