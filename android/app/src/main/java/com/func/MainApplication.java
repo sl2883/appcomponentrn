@@ -56,6 +56,8 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     ActivityLifecycleCallback.register(this);
+    CleverTapAPI.getDefaultInstance(this).enableDeviceNetworkInfoReporting(true);
+    CleverTapAPI.setDebugLevel(CleverTapAPI.LogLevel.DEBUG);
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
 
